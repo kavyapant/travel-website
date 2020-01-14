@@ -1,0 +1,14 @@
+.bus{
+background-image: url('f.png');
+}
+.flight{
+	background-image:url('a.jpg');
+}
+.btn{background-position:center;
+background-repeat:no-repeat;
+	width:100px;
+height:100px;
+float:left;
+border:0;
+
+}

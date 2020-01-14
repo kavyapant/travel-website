@@ -1,0 +1,25 @@
+<html>
+<head>
+  <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+<form>
+<input type='button' name="bus" class="btn bus" value="" onclick=window.open('http://localhost:8888/flights.html','_self')>
+<input type='submit' name="flight" class="btn flight" value="" formaction="cgi-bin/aa.py">
+<select name='city'>
+<option value="Amsterdam">Amsterdam</option>
+<option value="Berlin">Berlin</option>
+<option value="Barcelona">Barcelona</option>
+<option value="Dubai">Dubai</option>
+<option value="London">London</option>
+<option value="Paris">Paris</option>
+<option value="Rome">Rome</option>
+<option value="Tuscany">Tuscany</option>
+</select> 
+<input type="submit" value="View profile" formaction="cgi-bin/profile.py">
+<input type=button value="Back to Login page" onclick=window.open("login.html","_self")>
+<input type="submit" value="Restaurants" name="b1" formaction="cgi-bin/ams.py">
+<input type="submit" value="Weather" name="b1" formaction="weather/index.html">
+</form>
+</body>
+</html>

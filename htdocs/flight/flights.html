@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+	<title>Flight Booking</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="booking-cta">
+							<h1>Book your flight today</h1>
+							<p>Search from hundreds of options and book your ideal flight today!</p>
+						</div>
+					</div>
+					<div class="col-md-7 col-md-offset-1">
+						<div class="booking-form">
+							<form method="post" action="cgi-bin/aa.py">
+								<div class="form-group">
+									<div class="form-checkbox">
+										<label for="roundtrip">
+											<input type="radio" id="roundtrip" name="flight-type" checked onclick="document.getElementById('returning').disabled=false;">
+											<span></span>Roundtrip
+										</label>
+										<label for="one-way">
+											<input type="radio" id="one-way" name="flight-type" onclick="document.getElementById('returning').disabled=true;">
+											<span></span>One way
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label" >Flying from</span>
+											<select class="form-control" id="source">
+												<option>Delhi</option>
+												<option>Mumbai</option>
+												<option>Kolkata</option>
+												<option>Bangalore</option>
+												<option>Lucknow</option>
+												<option>Chennai</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Flyning to</span>
+										<select class="form-control" id="destination">
+												<option>Berlin</option>
+												<option>Dubai</option>
+												<option>Barcelona</option>
+												<option>Amsterdam</option>
+												<option>Rome</option>
+												<option>Tuscany</option>
+												<option>London</option>
+												<option>Paris</option>
+											</select></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Departing</span>
+											<input class="form-control" type="date" id="departing" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Returning</span>
+											<input class="form-control" type="date" id="returning" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Adults (18+)</span>
+											<select class="form-control" id="adults">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Children (0-17)</span>
+											<select class="form-control" id="children">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Travel class</span>
+											<select class="form-control">
+												<option>Economy class</option>
+												<option>Business class</option>
+												<option>First class</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-btn">
+									<input type="submit" class="submit-btn" value="Show flights">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>

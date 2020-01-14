@@ -1,0 +1,1 @@
+Mini Project on Travel Website using HTML, JavaScript, CGI(Apache), Python etc. for convenient and hassle free booking of flights, hotels, restaurants, attractions at locations around the world
